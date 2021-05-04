@@ -11,5 +11,7 @@ namespace MicroService.Advert.API
         Task<string> Add(AdvertModel model);
 
         Task<bool> Confirm(ConfirmAdvertModel model);
+
+        Task<bool> CheckHealthAsync();
     }
 }

@@ -40,6 +40,9 @@ namespace MicroService.Advert.API
                 config.AssumeDefaultVersionWhenUnspecified = true;
                 config.ReportApiVersions = true;
             });
+
+            services.AddHealthChecks()
+                .AddCheck<StorageHealthCheck>("StorageHealthCheck");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,6 +55,7 @@ namespace MicroService.Advert.API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MicroService.Advert.API v1"));
             }
 
+            app.UseHealthChecks("/health");
             app.UseRouting();
 
             app.UseAuthorization();
