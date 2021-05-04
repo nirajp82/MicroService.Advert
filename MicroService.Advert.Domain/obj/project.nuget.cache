@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "JCs93fXtIFb+0lrLwyH9t7WwnCSAQzTob4+mlIQ812fXPmM4LgRg8Tp2yx8F9imKlJkFXx0YPVDIdxgH9iBW/Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.Domain\\MicroService.Advert.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\awssdk.core\\3.7.0.17\\awssdk.core.3.7.0.17.nupkg.sha512",
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.0.17\\awssdk.dynamodbv2.3.7.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "wTWg5fXcoPXyj512HMSgcpEPhynFJmUnfbNMhH0i2CogdkBi8E2fUGj/OOA9cG57czuaWFEd4AnFqmz16niuvA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.API\\MicroService.Advert.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\awssdk.core\\3.7.0.17\\awssdk.core.3.7.0.17.nupkg.sha512",
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.0.17\\awssdk.dynamodbv2.3.7.0.17.nupkg.sha512",
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\microsoft.extensions.options\\3.0.0\\microsoft.extensions.options.3.0.0.nupkg.sha512",
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.0\\microsoft.extensions.primitives.3.0.0.nupkg.sha512",
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.4\\swashbuckle.aspnetcore.6.1.4.nupkg.sha512",
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.4\\swashbuckle.aspnetcore.swagger.6.1.4.nupkg.sha512",
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.4\\swashbuckle.aspnetcore.swaggergen.6.1.4.nupkg.sha512",
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.4\\swashbuckle.aspnetcore.swaggerui.6.1.4.nupkg.sha512",
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
