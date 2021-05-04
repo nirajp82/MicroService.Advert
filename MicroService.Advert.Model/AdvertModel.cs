@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MicroService.Advert.Domain
+namespace MicroService.Advert.Model
 {
     public class AdvertModel
     {

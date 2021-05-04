@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MicroService.Advert.Model;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,5 +12,50 @@ namespace MicroService.Advert.API.Controllers
     [ApiController]
     public class AdvertController : ControllerBase
     {
+        private readonly IAdvertStorageService _advertStorageService;
+
+        public AdvertController(IAdvertStorageService advertStorageService)
+        {
+            _advertStorageService = advertStorageService;
+        }
+
+        [HttpPost]
+        [Route("Create")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(typeof(CreateAdvertResponse), 200)]
+        public async Task<IActionResult> Create(AdvertModel model)
+        {
+            string recordId;
+            try
+            {
+                recordId = await _advertStorageService.Add(model);
+            }            
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+            return StatusCode(201, new CreateAdvertResponse { Id = recordId });
+        }
+
+        [HttpPut]
+        [Route("Confirm")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType( 200)]
+        public async Task<IActionResult> Confirm(ConfirmAdvertModel model)
+        {
+            try
+            {
+                 await _advertStorageService.Confirm(model);
+            }
+            catch (KeyNotFoundException)
+            {
+                return NotFound();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+            return Ok();
+        }
     }
 }

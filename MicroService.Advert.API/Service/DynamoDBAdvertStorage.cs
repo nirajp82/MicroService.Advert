@@ -1,7 +1,7 @@
 ﻿using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 using AutoMapper;
-using MicroService.Advert.Domain;
+using MicroService.Advert.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;

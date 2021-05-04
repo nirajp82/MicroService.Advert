@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Amazon.DynamoDBv2.DataModel;
 
-namespace MicroService.Advert.Domain
+namespace MicroService.Advert.Model
 {
     [DynamoDBTable("Advert")]
     public class AdvertDbModel

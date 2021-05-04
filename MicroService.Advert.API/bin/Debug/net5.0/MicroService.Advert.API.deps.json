@@ -35,7 +35,8 @@
         "dependencies": {
           "AWSSDK.DynamoDBv2": "3.7.0.17",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
-          "MicroService.Advert.Domain": "1.0.0",
+          "MicroService.Advert.Model": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Versioning": "5.0.0",
           "Swashbuckle.AspNetCore": "6.1.4",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
@@ -384,6 +385,17 @@
           "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Mvc.Versioning/5.0.0": {
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Mvc.Versioning.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.7710.5690"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Mvc.Versioning.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.7.0": {},
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
       "Microsoft.Extensions.DependencyInjection.Abstractions/3.0.0": {},
@@ -453,15 +465,15 @@
         }
       },
       "System.Reflection.Emit/4.7.0": {},
-      "MicroService.Advert.Domain/1.0.0": {
+      "MicroService.Advert.Model/1.0.0": {
         "dependencies": {
           "AWSSDK.DynamoDBv2": "3.7.0.17"
         },
         "runtime": {
-          "MicroService.Advert.Domain.dll": {}
+          "MicroService.Advert.Model.dll": {}
         },
         "compile": {
-          "MicroService.Advert.Domain.dll": {}
+          "MicroService.Advert.Model.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -2198,6 +2210,13 @@
       "path": "awssdk.dynamodbv2/3.7.0.17",
       "hashPath": "awssdk.dynamodbv2.3.7.0.17.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Mvc.Versioning/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mN9IARvNpHMBD2/oGmp5Bxp1Dg45Hfcp+LWaAyTtL2HisWLMOIcf0Ox1qW9IvCvdbHM+2A9dWEInhiqBsNxsJA==",
+      "path": "microsoft.aspnetcore.mvc.versioning/5.0.0",
+      "hashPath": "microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512"
+    },
     "Microsoft.CSharp/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -2275,7 +2294,7 @@
       "path": "system.reflection.emit/4.7.0",
       "hashPath": "system.reflection.emit.4.7.0.nupkg.sha512"
     },
-    "MicroService.Advert.Domain/1.0.0": {
+    "MicroService.Advert.Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

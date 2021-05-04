@@ -1,4 +1,4 @@
-﻿namespace MicroService.Advert.Domain
+﻿namespace MicroService.Advert.Model
 {
     public enum AdvertStatus
     {

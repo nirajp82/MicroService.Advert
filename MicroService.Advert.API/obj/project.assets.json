@@ -50,6 +50,18 @@
           "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Mvc.Versioning/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Mvc.Versioning.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Mvc.Versioning.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
@@ -170,17 +182,17 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "MicroService.Advert.Domain/1.0.0": {
+      "MicroService.Advert.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "AWSSDK.DynamoDBv2": "3.7.0.17"
         },
         "compile": {
-          "bin/placeholder/MicroService.Advert.Domain.dll": {}
+          "bin/placeholder/MicroService.Advert.Model.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MicroService.Advert.Domain.dll": {}
+          "bin/placeholder/MicroService.Advert.Model.dll": {}
         }
       }
     }
@@ -265,6 +277,25 @@
         "lib/netstandard2.0/AWSSDK.DynamoDBv2.xml",
         "tools/install.ps1",
         "tools/uninstall.ps1"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.Versioning/5.0.0": {
+      "sha512": "mN9IARvNpHMBD2/oGmp5Bxp1Dg45Hfcp+LWaAyTtL2HisWLMOIcf0Ox1qW9IvCvdbHM+2A9dWEInhiqBsNxsJA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.versioning/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "icon.png",
+        "lib/net5.0/Microsoft.AspNetCore.Mvc.Versioning.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Mvc.Versioning.pdb",
+        "lib/net5.0/Microsoft.AspNetCore.Mvc.Versioning.xml",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.pdb",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.xml",
+        "microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.versioning.nuspec"
       ]
     },
     "Microsoft.CSharp/4.7.0": {
@@ -549,17 +580,18 @@
         "version.txt"
       ]
     },
-    "MicroService.Advert.Domain/1.0.0": {
+    "MicroService.Advert.Model/1.0.0": {
       "type": "project",
-      "path": "../MicroService.Advert.Domain/MicroService.Advert.Domain.csproj",
-      "msbuildProject": "../MicroService.Advert.Domain/MicroService.Advert.Domain.csproj"
+      "path": "../MicroService.Advert.Model/MicroService.Advert.Model.csproj",
+      "msbuildProject": "../MicroService.Advert.Model/MicroService.Advert.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "AWSSDK.DynamoDBv2 >= 3.7.0.17",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.1",
-      "MicroService.Advert.Domain >= 1.0.0",
+      "MicroService.Advert.Model >= 1.0.0",
+      "Microsoft.AspNetCore.Mvc.Versioning >= 5.0.0",
       "Swashbuckle.AspNetCore >= 6.1.4"
     ]
   },
@@ -590,8 +622,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.Domain\\MicroService.Advert.Domain.csproj": {
-              "projectPath": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.Domain\\MicroService.Advert.Domain.csproj"
+            "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.Model\\MicroService.Advert.Model.csproj": {
+              "projectPath": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.Model\\MicroService.Advert.Model.csproj"
             }
           }
         }
@@ -613,6 +645,10 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[8.1.1, )"
+          },
+          "Microsoft.AspNetCore.Mvc.Versioning": {
+            "target": "Package",
+            "version": "[5.0.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

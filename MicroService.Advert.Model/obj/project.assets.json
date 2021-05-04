@@ -90,11 +90,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.Domain\\MicroService.Advert.Domain.csproj",
-      "projectName": "MicroService.Advert.Domain",
-      "projectPath": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.Domain\\MicroService.Advert.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.Model\\MicroService.Advert.Model.csproj",
+      "projectName": "MicroService.Advert.Model",
+      "projectPath": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.Model\\MicroService.Advert.Model.csproj",
       "packagesPath": "C:\\Users\\AANCHAL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.Domain\\obj\\",
+      "outputPath": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\AANCHAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
