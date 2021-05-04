@@ -1,0 +1,12 @@
+C:\Users\AANCHAL\source\repos\MicroService.Advert\MicroService.Advert.Model\bin\Release\net5.0\MicroService.Advert.Model.deps.json
+C:\Users\AANCHAL\source\repos\MicroService.Advert\MicroService.Advert.Model\bin\Release\net5.0\MicroService.Advert.Model.dll
+C:\Users\AANCHAL\source\repos\MicroService.Advert\MicroService.Advert.Model\bin\Release\net5.0\ref\MicroService.Advert.Model.dll
+C:\Users\AANCHAL\source\repos\MicroService.Advert\MicroService.Advert.Model\bin\Release\net5.0\MicroService.Advert.Model.pdb
+C:\Users\AANCHAL\source\repos\MicroService.Advert\MicroService.Advert.Model\obj\Release\net5.0\MicroService.Advert.Model.csprojAssemblyReference.cache
+C:\Users\AANCHAL\source\repos\MicroService.Advert\MicroService.Advert.Model\obj\Release\net5.0\MicroService.Advert.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AANCHAL\source\repos\MicroService.Advert\MicroService.Advert.Model\obj\Release\net5.0\MicroService.Advert.Model.AssemblyInfoInputs.cache
+C:\Users\AANCHAL\source\repos\MicroService.Advert\MicroService.Advert.Model\obj\Release\net5.0\MicroService.Advert.Model.AssemblyInfo.cs
+C:\Users\AANCHAL\source\repos\MicroService.Advert\MicroService.Advert.Model\obj\Release\net5.0\MicroService.Advert.Model.csproj.CoreCompileInputs.cache
+C:\Users\AANCHAL\source\repos\MicroService.Advert\MicroService.Advert.Model\obj\Release\net5.0\MicroService.Advert.Model.dll
+C:\Users\AANCHAL\source\repos\MicroService.Advert\MicroService.Advert.Model\obj\Release\net5.0\ref\MicroService.Advert.Model.dll
+C:\Users\AANCHAL\source\repos\MicroService.Advert\MicroService.Advert.Model\obj\Release\net5.0\MicroService.Advert.Model.pdb
