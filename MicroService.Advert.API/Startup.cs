@@ -1,3 +1,4 @@
+using Amazon.DynamoDBv2;
 using MicroService.Advert.API.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -33,6 +34,8 @@ namespace MicroService.Advert.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MicroService.Advert.API", Version = "v1" });
             });
+            
+            services.AddAWSService<IAmazonDynamoDB>();
 
             services.AddApiVersioning(config =>
             {
