@@ -9,6 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroService.Advert.API", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroService.Advert.Model", "MicroService.Advert.Model\MicroService.Advert.Model.csproj", "{88F4FA8E-0CA9-48CE-999B-22D0C710C4D7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{E31A2759-988D-44A2-87A3-BDE5D02E328A}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\Publish\WebAdvertAPI\AppSpec.yml = ..\..\..\..\..\Publish\WebAdvertAPI\AppSpec.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
