@@ -20,9 +20,9 @@ namespace MicroService.Advert.API.Controllers
         }
 
         [HttpGet]
-        [Route("Healthcheck")]
+        [Route("Health")]
         [ProducesResponseType(typeof(string), 200)]
-        public async Task<IActionResult> Healthcheck()
+        public async Task<IActionResult> Health()
         {
             try
             {
