@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MicroService.WebAdvert.Web.Controllers
+namespace MicroService.WebAdvert.Web
 {
     /// <summary>
     /// https://github.com/aws/aws-aspnet-cognito-identity-provider/tree/master/samples/Samples/Areas/Identity/Pages/Account
@@ -32,27 +32,27 @@ namespace MicroService.WebAdvert.Web.Controllers
 
         public IActionResult Signup()
         {
-            return View(new SignupModel());
+            return View(new SignUpModel());
         }
 
         [HttpPost]
-        public async Task<IActionResult> Signup(SignupModel model)
+        public async Task<IActionResult> Signup(SignUpModel model)
         {
             if (ModelState.IsValid)
             {
-                var user = _cognitoUserPool.GetUser(model.EMail);
+                var user = _cognitoUserPool.GetUser(model.Email);
                 if (user.Status != null)
                 {
-                    ModelState.AddModelError(nameof(SignupModel.EMail), "User already exists");
+                    ModelState.AddModelError(nameof(SignUpModel.Email), "User already exists");
                     return View(model);
                 }
                 //Name is required field
-                user.Attributes.Add("name", model.EMail);//CognitoAttributesConstants.Name
+                user.Attributes.Add("name", model.Email);//CognitoAttributesConstants.Name
 
                 //var result1 = await _cognitoUserManager.CreateAsync(user, model.Password);
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
-                    return RedirectToAction("Confirm", new ConfirmModel { EMail = model.EMail });
+                    return RedirectToAction("Confirm", new ConfirmModel { Email = model.Email });
 
             }
             return View(model);
@@ -69,7 +69,7 @@ namespace MicroService.WebAdvert.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = await _userManager.FindByEmailAsync(model.EMail);
+                var user = await _userManager.FindByEmailAsync(model.Email);
                 if (user == null)
                 {
                     ModelState.AddModelError("User", "User with given email address was not found!");
@@ -99,7 +99,7 @@ namespace MicroService.WebAdvert.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = await _signInManager.PasswordSignInAsync(model.EMail, model.Password, false, false);
+                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
                 if (result.Succeeded)
                     return RedirectToAction("Index", "Home");
                 else

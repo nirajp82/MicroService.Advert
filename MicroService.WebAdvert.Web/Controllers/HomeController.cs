@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MicroService.WebAdvert.Web.Controllers
+namespace MicroService.WebAdvert.Web
 {
     [Authorize]
     public class HomeController : Controller

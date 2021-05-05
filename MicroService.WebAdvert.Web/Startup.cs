@@ -39,6 +39,8 @@ namespace MicroService.WebAdvert.Web
             {
                 options.LoginPath = "/Account/Login";
             });
+            services.AddAutoMapper(typeof(AdvertApiProfile).Assembly);
+            services.AddTransient<IFileUploader, S3FileUploader>();
             services.AddControllersWithViews();
         }
 
