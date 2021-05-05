@@ -5,6 +5,6 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>C:\Publish\WebAdvertAPI\AdvertAPI</_PublishTargetUrl>
-    <History>True|2021-05-05T01:58:38.3144549Z;True|2021-05-04T21:49:02.2278985-04:00;True|2021-05-04T21:44:46.6562842-04:00;True|2021-05-04T19:24:05.0746312-04:00;True|2021-05-04T19:20:36.4719055-04:00;True|2021-05-04T18:55:40.6931451-04:00;True|2021-05-04T18:48:49.2657004-04:00;</History>
+    <History>True|2021-05-05T02:13:45.1008880Z;True|2021-05-04T21:58:38.3144549-04:00;True|2021-05-04T21:49:02.2278985-04:00;True|2021-05-04T21:44:46.6562842-04:00;True|2021-05-04T19:24:05.0746312-04:00;True|2021-05-04T19:20:36.4719055-04:00;True|2021-05-04T18:55:40.6931451-04:00;True|2021-05-04T18:48:49.2657004-04:00;</History>
   </PropertyGroup>
 </Project>
