@@ -19,6 +19,22 @@ namespace MicroService.Advert.API.Controllers
             _advertStorageService = advertStorageService;
         }
 
+        [HttpGet]
+        [Route("Healthcheck")]
+        [ProducesResponseType(typeof(string), 200)]
+        public async Task<IActionResult> Healthcheck()
+        {
+            try
+            {
+                string status = await _advertStorageService.CheckHealthAsync() ? "Healthy": "Unhealthy";
+                return Ok(status);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
         [HttpPost]
         [Route("Create")]
         [ProducesResponseType(400)]
