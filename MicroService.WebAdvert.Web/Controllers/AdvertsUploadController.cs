@@ -16,13 +16,13 @@ namespace MicroService.WebAdvert.Web
     public class AdvertsUploadController : Controller
     {
         private readonly IFileUploader _fileUploader;
-        // private readonly IAdvertApiClient _advertApiClient;
+        private readonly IAdvertApiClient _advertApiClient;
         private readonly IMapper _mapper;
 
-        public AdvertsUploadController(IFileUploader fileUploader, IMapper mapper)
+        public AdvertsUploadController(IFileUploader fileUploader, IMapper mapper, IAdvertApiClient advertApiClient)
         {
             _fileUploader = fileUploader;
-            //_advertApiClient = advertApiClient;
+            _advertApiClient = advertApiClient;
             _mapper = mapper;
         }
 
@@ -37,16 +37,12 @@ namespace MicroService.WebAdvert.Web
         {
             if (ModelState.IsValid)
             {
-                //var createAdvertModel = _mapper.Map<CreateAdvertModel>(model);
-                //var response = await _advertApiClient.CreateAsync(createAdvertModel);
-                //var id = response.Id;
-
-                var id = "TODO";//TODO: Get Id from API
-
-                var fileName = "";
+                CreateAdvertModel createAdvertModel = _mapper.Map<CreateAdvertModel>(model);
+                AdvertResponse apiCallResponse = await _advertApiClient.CreateAsync(createAdvertModel);
+                string id = apiCallResponse.Id;
                 if (imageFile != null)
                 {
-                    fileName = !string.IsNullOrEmpty(imageFile.FileName) ? Path.GetFileName(imageFile.FileName) : id;
+                    string fileName = !string.IsNullOrEmpty(imageFile.FileName) ? Path.GetFileName(imageFile.FileName) : id;
                     var filePath = $"{id}/{fileName}";
 
                     try
@@ -56,26 +52,26 @@ namespace MicroService.WebAdvert.Web
                         if (!result)
                             throw new Exception("Could not upload image to the file repository. Please see logs for more detail");
 
-                        //var confirmModel = new ConfirmAdvertRequest
-                        //{
-                        //    Id = id,
-                        //    FilePath = filePath,
-                        //    Status = AdvertStatus.Active
-                        //};
-                        //var canConfirm = await _advertApiClient.ConfirmAsync(confirmModel);
-                        //if (!canConfirm)
-                        //    throw new Exception($"Cannot confirm upload for advert {id}");
+                        ConfirmAdvertRequest confirmModel = new ConfirmAdvertRequest
+                        {
+                            Id = id,
+                            FilePath = filePath,
+                            Status = AdvertStatus.Active
+                        };
+                        bool canConfirm = await _advertApiClient.ConfirmAsync(confirmModel);
+                        if (!canConfirm)
+                            throw new Exception($"Cannot confirm upload for advert {id}");
                         return RedirectToAction("Index", "Home");
                     }
                     catch (Exception ex)
                     {
-                        //var confirmModel = new ConfirmAdvertRequest
-                        //{
-                        //    Id = id,
-                        //    FilePath = filePath,
-                        //    Status = AdvertStatus.Pending
-                        //};
-                        //await _advertApiClient.ConfirmAsync(confirmModel);
+                        ConfirmAdvertRequest confirmModel = new ConfirmAdvertRequest
+                        {
+                            Id = id,
+                            FilePath = filePath,
+                            Status = AdvertStatus.Pending
+                        };
+                        await _advertApiClient.ConfirmAsync(confirmModel);
                         Console.WriteLine(ex.Message);
                     }
                 }

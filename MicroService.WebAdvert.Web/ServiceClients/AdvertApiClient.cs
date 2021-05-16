@@ -23,26 +23,27 @@ namespace MicroService.WebAdvert.Web
             _client = client;
             _mapper = mapper;
 
-            _baseAddress = configuration.GetSection("AdvertApi").GetValue<string>("BaseUrl");
+            string baseUriUse = configuration.GetValue<string>("AdvertApi:Uri:Use");
+            _baseAddress = configuration.GetValue<string>($"AdvertApi:Uri:{baseUriUse}");
             
         }
         public async Task<AdvertResponse> CreateAsync(CreateAdvertModel model)
         {
-            var advertApiModel = _mapper.Map<AdvertModel>(model);
-            var jsonModel = JsonConvert.SerializeObject(advertApiModel);
-            var response = await _client.PostAsync(new Uri($"{_baseAddress}/create"),
+            AdvertModel advertApiModel = _mapper.Map<AdvertModel>(model);
+            string jsonModel = JsonConvert.SerializeObject(advertApiModel);
+            HttpResponseMessage response = await _client.PostAsync(new Uri($"{_baseAddress}/create"),
                              new StringContent(jsonModel, Encoding.UTF8, "application/json"));
-            var responseJson = await response.Content.ReadAsStringAsync();
-            var createAdvertResponse = JsonConvert.DeserializeObject<CreateAdvertResponse>(responseJson);
-            var advertResponse = _mapper.Map<AdvertResponse>(createAdvertResponse);
+            string responseJson = await response.Content.ReadAsStringAsync();
+            CreateAdvertResponse createAdvertResponse = JsonConvert.DeserializeObject<CreateAdvertResponse>(responseJson);
+            AdvertResponse advertResponse = _mapper.Map<AdvertResponse>(createAdvertResponse);
             return advertResponse;
         }
 
         public async Task<bool> ConfirmAsync(ConfirmAdvertRequest model)
         {
-            var confirmApiModel = _mapper.Map<ConfirmAdvertModel>(model);
-            var jsonModel = JsonConvert.SerializeObject(confirmApiModel);
-            var response = await _client.PutAsync(new Uri($"{_baseAddress}/confirm"),
+            ConfirmAdvertModel confirmApiModel = _mapper.Map<ConfirmAdvertModel>(model);
+            string jsonModel = JsonConvert.SerializeObject(confirmApiModel);
+            HttpResponseMessage response = await _client.PutAsync(new Uri($"{_baseAddress}/confirm"),
                                 new StringContent(jsonModel, Encoding.UTF8, "application/json"));
             return response.StatusCode == HttpStatusCode.OK;
         }

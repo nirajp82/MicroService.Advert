@@ -45,7 +45,7 @@ namespace MicroService.Advert.API
             });
 
             services.AddHealthChecks()
-                .AddCheck<StorageHealthCheck>("StorageHealthCheck");
+                .AddCheck<StorageHealthCheck>(nameof(StorageHealthCheck));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
