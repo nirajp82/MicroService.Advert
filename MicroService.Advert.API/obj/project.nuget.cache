@@ -1,14 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "qBEOjd1ZGeS/DLTF/3CQ5wjXIy2JsL2hWlObqT6Saz7m655FXP8fUwMzE0tKbG4fzBzXsk6877EdP/gxUOASrQ==",
+  "dgSpecHash": "B37fP7B5mfQCVC4mB+fbwdyHyQKLfXIOaQvd5U+As9I0fM4qioghBsUxGHW36lsPODDk6GY9dGFlEvJPyBakAQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.API\\MicroService.Advert.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AANCHAL\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\AANCHAL\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
-    "C:\\Users\\AANCHAL\\.nuget\\packages\\awssdk.core\\3.7.0.17\\awssdk.core.3.7.0.17.nupkg.sha512",
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\awssdk.core\\3.7.0.22\\awssdk.core.3.7.0.22.nupkg.sha512",
     "C:\\Users\\AANCHAL\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.0.17\\awssdk.dynamodbv2.3.7.0.17.nupkg.sha512",
     "C:\\Users\\AANCHAL\\.nuget\\packages\\awssdk.extensions.netcore.setup\\3.7.0.1\\awssdk.extensions.netcore.setup.3.7.0.1.nupkg.sha512",
+    "C:\\Users\\AANCHAL\\.nuget\\packages\\awssdk.simplenotificationservice\\3.7.1.7\\awssdk.simplenotificationservice.3.7.1.7.nupkg.sha512",
     "C:\\Users\\AANCHAL\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.0.0\\microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
     "C:\\Users\\AANCHAL\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\AANCHAL\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",

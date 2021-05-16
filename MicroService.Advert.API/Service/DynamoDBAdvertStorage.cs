@@ -24,7 +24,7 @@ namespace MicroService.Advert.API
         public async Task<string> Add(AdvertModel model)
         {
             AdvertDbModel dbModel = _mapper.Map<AdvertDbModel>(model);
-            dbModel.Id = new Guid().ToString();
+            dbModel.Id = Guid.NewGuid().ToString();
             dbModel.CreatedDateTime = DateTime.UtcNow;
             dbModel.AdvertStatus = AdvertStatus.Pending;
 

@@ -25,18 +25,26 @@ namespace MicroService.WebAdvert.Web
 
             string baseUriUse = configuration.GetValue<string>("AdvertApi:Uri:Use");
             _baseAddress = configuration.GetValue<string>($"AdvertApi:Uri:{baseUriUse}");
-            
+
         }
         public async Task<AdvertResponse> CreateAsync(CreateAdvertModel model)
         {
             AdvertModel advertApiModel = _mapper.Map<AdvertModel>(model);
             string jsonModel = JsonConvert.SerializeObject(advertApiModel);
-            HttpResponseMessage response = await _client.PostAsync(new Uri($"{_baseAddress}/create"),
-                             new StringContent(jsonModel, Encoding.UTF8, "application/json"));
-            string responseJson = await response.Content.ReadAsStringAsync();
-            CreateAdvertResponse createAdvertResponse = JsonConvert.DeserializeObject<CreateAdvertResponse>(responseJson);
-            AdvertResponse advertResponse = _mapper.Map<AdvertResponse>(createAdvertResponse);
-            return advertResponse;
+            try
+            {
+                HttpResponseMessage response = await _client.PostAsync(new Uri($"{_baseAddress}/create"),
+                                 new StringContent(jsonModel, Encoding.UTF8, "application/json"));
+                string responseJson = await response.Content.ReadAsStringAsync();
+                CreateAdvertResponse createAdvertResponse = JsonConvert.DeserializeObject<CreateAdvertResponse>(responseJson);
+                AdvertResponse advertResponse = _mapper.Map<AdvertResponse>(createAdvertResponse);
+                return advertResponse;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            return null;
         }
 
         public async Task<bool> ConfirmAsync(ConfirmAdvertRequest model)
@@ -47,7 +55,7 @@ namespace MicroService.WebAdvert.Web
                                 new StringContent(jsonModel, Encoding.UTF8, "application/json"));
             return response.StatusCode == HttpStatusCode.OK;
         }
-        
+
         public async Task<List<Advertisement>> GetAllAsync()
         {
             var apiCallResponse = await _client.GetAsync(new Uri($"{_baseAddress}/all"));

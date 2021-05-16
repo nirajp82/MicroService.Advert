@@ -45,9 +45,9 @@ namespace MicroService.WebAdvert.Web
             });
             services.AddAutoMapper(typeof(AdvertApiProfile).Assembly);
             services.AddTransient<IFileUploader, S3FileUploader>();
-            services.AddHttpClient<IAdvertApiClient, AdvertApiClient>()
-                .AddPolicyHandler(GetRetryPolicy())
-                .AddPolicyHandler(GetCircuitBreakerPolicy());
+            services.AddHttpClient<IAdvertApiClient, AdvertApiClient>();
+                //.AddPolicyHandler(GetRetryPolicy())
+                //.AddPolicyHandler(GetCircuitBreakerPolicy());
 
             services.AddControllersWithViews();
         }      

@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFi
 		SolutionFiles\AppSpec.yml = SolutionFiles\AppSpec.yml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAdvert.SearchWorker", "WebAdvert.SearchWorker\WebAdvert.SearchWorker.csproj", "{8331BCC1-038A-4A5C-A7D1-F201A6CD2A82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{88F4FA8E-0CA9-48CE-999B-22D0C710C4D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88F4FA8E-0CA9-48CE-999B-22D0C710C4D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88F4FA8E-0CA9-48CE-999B-22D0C710C4D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8331BCC1-038A-4A5C-A7D1-F201A6CD2A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8331BCC1-038A-4A5C-A7D1-F201A6CD2A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8331BCC1-038A-4A5C-A7D1-F201A6CD2A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8331BCC1-038A-4A5C-A7D1-F201A6CD2A82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
