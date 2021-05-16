@@ -1,0 +1,12 @@
+C:\Users\AANCHAL\source\repos\MicroService.Advert\WebAdvert.SearchWorker\bin\Debug\net5.0\WebAdvert.SearchWorker.deps.json
+C:\Users\AANCHAL\source\repos\MicroService.Advert\WebAdvert.SearchWorker\bin\Debug\net5.0\WebAdvert.SearchWorker.dll
+C:\Users\AANCHAL\source\repos\MicroService.Advert\WebAdvert.SearchWorker\bin\Debug\net5.0\ref\WebAdvert.SearchWorker.dll
+C:\Users\AANCHAL\source\repos\MicroService.Advert\WebAdvert.SearchWorker\bin\Debug\net5.0\WebAdvert.SearchWorker.pdb
+C:\Users\AANCHAL\source\repos\MicroService.Advert\WebAdvert.SearchWorker\obj\Debug\net5.0\WebAdvert.SearchWorker.csprojAssemblyReference.cache
+C:\Users\AANCHAL\source\repos\MicroService.Advert\WebAdvert.SearchWorker\obj\Debug\net5.0\WebAdvert.SearchWorker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AANCHAL\source\repos\MicroService.Advert\WebAdvert.SearchWorker\obj\Debug\net5.0\WebAdvert.SearchWorker.AssemblyInfoInputs.cache
+C:\Users\AANCHAL\source\repos\MicroService.Advert\WebAdvert.SearchWorker\obj\Debug\net5.0\WebAdvert.SearchWorker.AssemblyInfo.cs
+C:\Users\AANCHAL\source\repos\MicroService.Advert\WebAdvert.SearchWorker\obj\Debug\net5.0\WebAdvert.SearchWorker.csproj.CoreCompileInputs.cache
+C:\Users\AANCHAL\source\repos\MicroService.Advert\WebAdvert.SearchWorker\obj\Debug\net5.0\WebAdvert.SearchWorker.dll
+C:\Users\AANCHAL\source\repos\MicroService.Advert\WebAdvert.SearchWorker\obj\Debug\net5.0\ref\WebAdvert.SearchWorker.dll
+C:\Users\AANCHAL\source\repos\MicroService.Advert\WebAdvert.SearchWorker\obj\Debug\net5.0\WebAdvert.SearchWorker.pdb

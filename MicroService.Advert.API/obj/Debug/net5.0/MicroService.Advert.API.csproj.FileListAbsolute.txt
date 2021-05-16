@@ -35,3 +35,4 @@ C:\Users\AANCHAL\source\repos\MicroService.Advert\MicroService.Advert.API\obj\De
 C:\Users\AANCHAL\source\repos\MicroService.Advert\MicroService.Advert.API\obj\Debug\net5.0\ref\MicroService.Advert.API.dll
 C:\Users\AANCHAL\source\repos\MicroService.Advert\MicroService.Advert.API\obj\Debug\net5.0\MicroService.Advert.API.pdb
 C:\Users\AANCHAL\source\repos\MicroService.Advert\MicroService.Advert.API\obj\Debug\net5.0\MicroService.Advert.API.genruntimeconfig.cache
+C:\Users\AANCHAL\source\repos\MicroService.Advert\MicroService.Advert.API\bin\Debug\net5.0\AWSSDK.SimpleNotificationService.dll

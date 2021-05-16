@@ -4,14 +4,14 @@
     "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\WebAdvert.SearchWorker\\WebAdvert.SearchWorker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\WebAdvert.SearchWorker\\WebAdvert.SearchWorker.csproj": {
+    "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.Model\\MicroService.Advert.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\WebAdvert.SearchWorker\\WebAdvert.SearchWorker.csproj",
-        "projectName": "WebAdvert.SearchWorker",
-        "projectPath": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\WebAdvert.SearchWorker\\WebAdvert.SearchWorker.csproj",
+        "projectUniqueName": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.Model\\MicroService.Advert.Model.csproj",
+        "projectName": "MicroService.Advert.Model",
+        "projectPath": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.Model\\MicroService.Advert.Model.csproj",
         "packagesPath": "C:\\Users\\AANCHAL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\WebAdvert.SearchWorker\\obj\\",
+        "outputPath": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AANCHAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,70 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AWSSDK.DynamoDBv2": {
+              "target": "Package",
+              "version": "[3.7.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\WebAdvert.SearchWorker\\WebAdvert.SearchWorker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\WebAdvert.SearchWorker\\WebAdvert.SearchWorker.csproj",
+        "projectName": "WebAdvert.SearchWorker",
+        "projectPath": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\WebAdvert.SearchWorker\\WebAdvert.SearchWorker.csproj",
+        "packagesPath": "C:\\Users\\AANCHAL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\WebAdvert.SearchWorker\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\AANCHAL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.Model\\MicroService.Advert.Model.csproj": {
+                "projectPath": "C:\\Users\\AANCHAL\\source\\repos\\MicroService.Advert\\MicroService.Advert.Model\\MicroService.Advert.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
             "Amazon.Lambda.Core": {
               "target": "Package",
               "version": "[2.0.0, )"
@@ -51,6 +115,22 @@
             "Amazon.Lambda.Serialization.Json": {
               "target": "Package",
               "version": "[2.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "NEST": {
+              "target": "Package",
+              "version": "[7.12.1, )"
             }
           },
           "imports": [
